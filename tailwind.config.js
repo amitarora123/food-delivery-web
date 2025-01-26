@@ -27,12 +27,23 @@ export default {
         'bottom-background': "url('/assets/background/cta-two-bg.png')",
       },
     },
+    container: {
+      center: true, // Centers the container
+      padding: '1rem', // Default horizontal padding
+      screens: {
+        sm: '600px', // Custom width for small screens
+        md: '700px', // Custom width for medium screens
+        lg: '1000px', // Custom width for large screens
+        xl: '1200px', // Custom width for extra-large screens
+        '2xl': '1536px', // Custom width for 2xl screens
+      },
+    },
   },
   plugins: [
     function ({ addBase }) {
       addBase({
-        'p': {
-          color: 'rgb(66, 66, 66)'
+        p: {
+          color: 'rgb(66, 66, 66)',
         },
       });
     },
