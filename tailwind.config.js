@@ -35,7 +35,6 @@ export default {
         md: '700px', // Custom width for medium screens
         lg: '1000px', // Custom width for large screens
         xl: '1200px', // Custom width for extra-large screens
-        '2xl': '1536px', // Custom width for 2xl screens
       },
     },
   },
