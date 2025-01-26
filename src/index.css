@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@font-face {
+  font-family: 'SourceSans3';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Regular.ttf')
+    format('truetype');
+  font-weight: 400; /* Add specific weights like 400, 700 if available */
+  font-style: normal; /* Adjust if the font has italic styles */
+}
+
+@font-face {
+  font-family: 'SourceSans3-semibold';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Semibold.ttf')
+    format('truetype');
+  font-weight: 500; /* Add specific weights like 400, 700 if available */
+  font-style: normal; /* Adjust if the font has italic styles */
+}
+@font-face {
+  font-family: 'SourceSans3-bold';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: 800; /* Add specific weights like 400, 700 if available */
+  font-style: normal; /* Adjust if the font has italic styles */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sora;
+}
+.heading {
+  @apply mt-10 text-3xl font-bold text-center;
+}
+
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+.hover-top-shadow:hover {
+  -webkit-transform: translateY(-0.125rem) translateZ(0);
+  transform: translateY(-0.125rem) translateZ(0);
+  -webkit-box-shadow: 0 0 0.5rem 0 rgba(255, 179, 14, 0.8) !important;
+  box-shadow: 0 0 0.5rem 0 rgba(255, 179, 14, 0.8) !important;
+}
+
+.transition-transform {
+  transition: transform 0.5s ease-in-out;
+}
+
+.text-gradient {
+  background: linear-gradient(50deg, #fb3c00, #ffb800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-screen {
+    flex-direction: column;
+  }
+}
